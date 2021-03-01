@@ -1,3 +1,32 @@
 <div class="info-utilisateur">Date du jours : {{dateActuelle | date:'dd-MM-YYYY'}}  <br> participant : <!-- {{utilisateur.nom}} --> </div>
 
 <app-accueil-filtres></app-accueil-filtres>
+
+<table class="table table-striped table-bordered table-hover">
+   <thead>
+      <tr>
+        <th scope="col">Nom de la sortie</th>
+        <th scope="col">Date de la sortie</th>
+        <th scope="col">Clôture</th>
+        <th scope="col">Inscrit/places</th>
+        <th scope="col">Etat</th>
+        <th scope="col">Inscrit</th>
+        <th scope="col">Organisateur</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem ipsum dolor sit.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a routerLink="/creer-sortie"><button class="btn btn-light m-4">Créer une sortie</button></a>

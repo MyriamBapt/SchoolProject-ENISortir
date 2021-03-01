@@ -1,2 +1,42 @@
 <!--Utiliser la même page pour modifier en faisant appel à une fct différente (page préremplie->id a prendre en compte)-->
-<p>creer-sortie works!</p>
+
+<div>
+    <h1>Créer une sortie</h1>
+</div>
+
+<div class="container">
+    <form>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group"> <label for="nomSortie">Nom de la sortie: </label> 
+                <input id="nomSortie" type="text" name="nomSortie" class="form-control" placeholder="Entrer le nom ici" required="required" data-error="Nom de la sortie manquant ou invalide."> </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group"> <label for="campus">Campus</label> 
+                <input id="campus" type="text" name="campus" class="form-control" placeholder="Pré remplie" required="required"> </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group"> 
+                <label for="form_need">Please specify your need *</label> 
+                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                <option value="" selected disabled>--Selectionnez une ville--</option>
+                <option>Nantes</option>
+                </select> 
+            </div>
+
+            <div class="form-group"> <label for="form_need">Please specify your need *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                <option value="" selected disabled>--Select Your Issue--</option>
+                <option>Request Invoice for order</option>
+                <option>Request order status</option>
+                <option>Haven't received cashback yet</option>
+                <option>Other</option>
+            </select> </div>
+        </div>
+
+
+    </form>
+</div>
