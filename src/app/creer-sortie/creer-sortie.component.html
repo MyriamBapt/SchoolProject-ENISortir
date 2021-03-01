@@ -1,6 +1,6 @@
 <!--Utiliser la même page pour modifier en faisant appel à une fct différente (page préremplie->id a prendre en compte)-->
 
-<div>
+<div class="subtitle">
     <h1>Créer une sortie</h1>
 </div>
 
@@ -9,34 +9,114 @@
 
         <div class="row">
             <div class="col-md-6">
-                <div class="form-group"> <label for="nomSortie">Nom de la sortie: </label> 
-                <input id="nomSortie" type="text" name="nomSortie" class="form-control" placeholder="Entrer le nom ici" required="required" data-error="Nom de la sortie manquant ou invalide."> </div>
+                <div class="form-group"> 
+                    <label for="nomSortie">Nom de la sortie: </label> 
+                    <input id="nomSortie" type="text" name="nomSortie" class="form-control" placeholder="Entrer le nom ici" required="required" data-error="Nom de la sortie manquant ou invalide."> 
+                </div>
             </div>
 
             <div class="col-md-6">
-                <div class="form-group"> <label for="campus">Campus</label> 
-                <input id="campus" type="text" name="campus" class="form-control" placeholder="Pré remplie" required="required"> </div>
+                <div class="form-group"> 
+                    <label for="campus">Campus</label> 
+                    <input id="campus" type="text" name="campus" class="form-control" placeholder="Pré remplie" required="required"> 
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="form-group"> 
-                <label for="form_need">Please specify your need *</label> 
-                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                <option value="" selected disabled>--Selectionnez une ville--</option>
-                <option>Nantes</option>
-                </select> 
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="ville">Villes</label> 
+                    <select id="ville" name="ville" class="form-control" required="required">
+                        <option value="" selected disabled>--Selectionnez une ville--</option>
+                        <option>Nantes</option>
+                    </select> 
+                </div>
             </div>
 
-            <div class="form-group"> <label for="form_need">Please specify your need *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                <option value="" selected disabled>--Select Your Issue--</option>
-                <option>Request Invoice for order</option>
-                <option>Request order status</option>
-                <option>Haven't received cashback yet</option>
-                <option>Other</option>
-            </select> </div>
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="lieu">Lieu</label> 
+                    <select id="lieu" name="lieu" class="form-control" required="required">
+                        <option value="" selected disabled>--Selectionnez un lieu--</option>
+                        <option>Plume</option>
+                    </select> 
+                </div>
+            </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="dateHeureSortie">Date et heure de la sortie: </label> 
+                    <input id="dateHeureSortie" type="datetime-local" name="dateHeureSortie" class="form-control" required="required"> 
+                </div>  
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="dateLimiteInscription">Date limite d'inscription</label> 
+                    <input id="dateLimiteInscription" type="date" name="dateLimiteInscription" class="form-control" required="required"> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="nombreDePlace">Nombre de places: </label> 
+                    <input id="nombreDePlace" type="number" name="nombreDePlace" class="form-control" min="0" required="required"> 
+                </div>  
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="duree">Durée en minutes: </label> 
+                    <input id="duree" type="number" name="duree" class="form-control" min="0" required="required"> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="rue">Rue: </label> 
+                    <input id="rue" type="text" name="rue" class="form-control" placeholder="Pré remplie" required="required"> 
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="codePostal">Code postal: </label> 
+                    <input id="codePostal" type="text" name="codePostal" class="form-control" placeholder="Pré remplie" required="required"> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="Latitude">Latitude: </label> 
+                    <input id="Latitude" type="text" name="Latitude" class="form-control" placeholder="Pré remplie" required="required"> 
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group"> 
+                    <label for="longitude">Longitude: </label> 
+                    <input id="longitude" type="text" name="longitude" class="form-control" placeholder="Pré remplie" required="required"> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="form-group"> 
+                    <label for="description">Description et infos: </label> 
+                    <textarea id="description" name="description" class="form-control"></textarea> 
+                </div>
+            </div>
+        </div>
 
     </form>
 </div>
